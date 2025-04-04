@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://your-flask-app.onrender.com/api/$1" }
+  ]
+}
