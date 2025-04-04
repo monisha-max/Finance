@@ -16,4 +16,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # Start Quart app using gunicorn with Quart worker
-CMD ["gunicorn", "app:app", "-k", "quart.worker.asyncio", "-b", "0.0.0.0:8000"]
+CMD ["gunicorn", "main:app", "-k", "quart.worker.asyncio", "-b", "0.0.0.0:8000"]
+
